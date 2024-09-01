@@ -1,6 +1,9 @@
-resource "aws_lb_target_group" "front_end" {
-  name     = "frontend-tg"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = "vpc-0724a77e8c6c53d48"
+resource "aws_instance" "dev" {
+    ami = "ami-066784287e358dad1"
+    instance_type = "t2.micro"
+    key_name = "awsaws"
+    tags = {
+      Name = "EKs"
+    }
 }
+#command terraform import aws_instance.dev i-0e3f670f4ee619528
