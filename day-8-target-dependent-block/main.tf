@@ -1,5 +1,5 @@
 resource "aws_instance" "dependent" {
-    ami = "ami-066784287e358dad1"
+    ami = "ami-0ec0e125bb6c6e8ec"
     instance_type = "t2.micro"
     key_name = "rau-key"
 }
